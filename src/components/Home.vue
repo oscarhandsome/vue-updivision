@@ -14,12 +14,12 @@
         - Relation between components
         - Partly mobile UI adaptive
         - A little bit animations
+        - Issue with mutation on popup
       </pre>
       <hr>
       Not done:
       <pre>
       - Validation or the forms
-      - Issue with mutation on popup
       </pre>
 
     Time spent:
