@@ -12,7 +12,7 @@
                         </div>
                     </div>
                     <div class="popup-right">
-                        <button class="popup__close" @click="show = !show; onClose(show)">
+                        <button class="popup__close" @click="onClose(show)">
                             <v-icon name="times" width="30" height="30"/>
                         </button>
                         <div class="popup__name">{{ computedCurrProd.name }}</div>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="overlay" @click="show = !show; onClose(show)"></div>
+                <div class="overlay" @click="onClose(show)"></div>
             </div>
         </transition>
     </div>
@@ -43,8 +43,7 @@
             }
         },
         methods: {
-            onClose (event) {
-                this.currProd = {}
+            onClose () {
                 this.$emit('clicked', event)
             },
             getImgUrl(pic) {
@@ -53,7 +52,7 @@
         },
         computed: {
             computedCurrProd: function () {
-                return this.currProd
+                return this.currProd // can be changed - mutated
             }
         }
     }

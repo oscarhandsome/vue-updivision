@@ -14,7 +14,7 @@ Done:
 <hr> 
 Not done:
 - Validation or the forms
-- Issue with mutation on popup
+- Issue with mutation on popup (fixed)
 <hr>
 Time spent:
   ~ 6 hours

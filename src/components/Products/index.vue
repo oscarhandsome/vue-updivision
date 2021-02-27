@@ -4,13 +4,13 @@
         <h3>Products</h3>
         <hr>
         <div class="products">
-            <div class="product" v-for="(prod, index) in products" :key="prod + index">
+            <div class="product" v-for="prod in products" :key="prod.id">
                 <div class="product__image">
                     <img :src="getImgUrl(prod.id)" alt="product-1">
                 </div>
                 <div class="product__name">{{ prod.name }}</div>
                 <div class="product__price">{{ prod.price }}</div>
-                <button class="product__link" @click="show = !show; getCurrProd(prod)">Details</button>
+                <button class="product__link" @click="getCurrProd(prod)">Details</button>
                 <!--<a :href="'/product/'+ prod.id" class="product__link" @click="show = !show; getCurrProd(prod)">Details</a>-->
             </div>
         </div>
@@ -85,9 +85,11 @@
             getCurrProd(currProd) {
                 // console.log(currProd);
                 this.currProd = currProd;
+                this.show = !this.show;
             },
             onClickChild (value) {
-                this.show = value;
+                console.log(value)
+                this.show = !this.show;
             }
         }
     }
