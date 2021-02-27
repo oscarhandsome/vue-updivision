@@ -1,0 +1,87 @@
+// ************** Products ************** //
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  padding: 2rem;
+  background-color: #eeeeee;
+}
+
+.product {
+  position: relative;
+  padding-bottom: 1rem;
+  margin: 0 1.5rem 2.5rem 0;
+  width: 15rem;
+  background-color: white;
+  border: solid 1px lightgray;
+  //filter: drop-shadow(10px 10px 2px rgba(0,0,0, .2));
+  box-shadow: 0 5px 10px 0 rgba(0,0,0, .2);
+  border-radius: 10px;
+  transition: all 200ms ease-in;
+
+  &:hover {
+    //cursor: pointer;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0, .2);
+  }
+
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+
+  &__image {
+    display: flex;
+    position: relative;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto .5rem;
+    width: 90%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0, .3));
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__price {
+    display: inline-block;
+    padding-left: 1rem;
+    color: grey;
+  }
+
+  &__link {
+    display: inline-block;
+    float: right;
+    margin-right: 1rem;
+    padding: .3rem .7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .7rem;
+    color: white;
+    border: none;
+    border-radius: 15px;
+
+    background-color: #e91e63;
+    transition: all 200ms ease-in;
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      color: white;
+      background-color: #7d21a3;
+    }
+  }
+
+}
