@@ -1,5 +1,27 @@
 # vue-updivision
 
+Test task for Vue Updivision, all right rereved (c) 2021
+
+Done:
+- Login page - UI
+- Register page - UI
+- Products page- UI
+- Popup- UI
+- Routing
+- Relation between components
+- Partly mobile UI adaptive
+- A little bit animations
+<hr> 
+Not done:
+- Validation or the forms
+- Issue with mutation on popup
+<hr>
+Time spent:
+  ~ 6 hours
+<hr>
+Conclusion:
+  ...
+
 ## Project setup
 ```
 npm install
